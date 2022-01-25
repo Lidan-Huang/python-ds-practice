@@ -35,3 +35,5 @@ def is_palindrome(phrase):
             return False
     
     return True
+
+    # .replace() to remove the space

@@ -13,9 +13,19 @@ def weekday_name(day_of_week):
         >>> weekday_name(0)
     """
 
-    week_days = {1:"Sunday", 2:"Monday", 3:"Tuesday", 4:"Wednesday", 5:"Thursday", 6:"Friday", 7:"Saturday"}
+    week_days = {
+        1:"Sunday",
+        2:"Monday", 
+        3:"Tuesday",
+        4:"Wednesday",
+        5:"Thursday", 
+        6:"Friday", 
+        7:"Saturday"
+    }
 
     if day_of_week in week_days.keys():
         return week_days[day_of_week]
     else:
         return None
+    
+    # .get()

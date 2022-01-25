@@ -14,3 +14,6 @@ def multiple_letter_count(phrase):
         else:
             key_to_value[letter] += 1
     return key_to_value
+
+    # .get()
+    # dictionary comprehension

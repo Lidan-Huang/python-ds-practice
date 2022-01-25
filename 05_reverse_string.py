@@ -10,4 +10,4 @@ def reverse_string(phrase):
     word_list = list(phrase)
     word_list.reverse()
 
-    print(''.join(word_list))
+    return ''.join(word_list)
