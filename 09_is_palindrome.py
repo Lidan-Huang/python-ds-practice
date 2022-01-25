@@ -26,7 +26,8 @@ def is_palindrome(phrase):
 
     phrase = phrase.lower()
     if ' ' in phrase:
-        phrase = "".join(phrase.split(" "))
+        # phrase = "".join(phrase.split(" "))
+        phrase = phrase.replace(" ", "")
     
     phrase_list = list(phrase)
 

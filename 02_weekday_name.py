@@ -23,9 +23,9 @@ def weekday_name(day_of_week):
         7:"Saturday"
     }
 
-    if day_of_week in week_days.keys():
-        return week_days[day_of_week]
-    else:
-        return None
+    # if day_of_week in week_days.keys():
+    #     return week_days[day_of_week]
+    # else:
+    #     return None
     
-    # .get()
+    return week_days.get(day_of_week, None)
