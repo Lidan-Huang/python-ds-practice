@@ -21,3 +21,17 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+    if len(phrase) <= 1:
+        return True
+
+    phrase = phrase.lower()
+    if ' ' in phrase:
+        phrase = "".join(phrase.split(" "))
+    
+    phrase_list = list(phrase)
+
+    while len(phrase_list) > 1:
+        if phrase_list.pop(0) != phrase_list.pop():
+            return False
+    
+    return True
