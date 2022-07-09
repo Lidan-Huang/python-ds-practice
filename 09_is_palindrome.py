@@ -29,12 +29,14 @@ def is_palindrome(phrase):
         # phrase = "".join(phrase.split(" "))
         phrase = phrase.replace(" ", "")
     
-    phrase_list = list(phrase)
+    # phrase_list = list(phrase)
 
-    while len(phrase_list) > 1:
-        if phrase_list.pop(0) != phrase_list.pop():
-            return False
+    # while len(phrase_list) > 1:
+    #     if phrase_list.pop(0) != phrase_list.pop():
+    #         return False
     
-    return True
+    # return True
 
     # .replace() to remove the space
+    reversed = phrase[::-1]
+    return reversed == phrase
