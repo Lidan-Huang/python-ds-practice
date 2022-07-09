@@ -24,3 +24,16 @@ def truncate(phrase, n):
         >>> truncate("Well", 3)
         '...'
     """
+    if n < 3:
+        return "Truncation must be at least 3 characters."
+
+    if n > len(phrase):
+        return phrase
+    else:
+        return phrase[0:(n - 3)] + "..."
+
+        # as string doesn't have slice() method, we could use slice constructor
+        # s1 = slice(3)
+        # "apple"[s1] # "app"
+        # slice(stop)
+        # slie(start, stop, step)
