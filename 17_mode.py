@@ -11,3 +11,12 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    unique = set(nums)
+    count = 0
+    common_num = 0
+    
+    for num in unique:
+        if nums.count(num) > count:
+            count = nums.count(num)
+            common_num = num
+    return common_num
