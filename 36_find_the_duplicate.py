@@ -13,3 +13,11 @@ def find_the_duplicate(nums):
         >>> find_the_duplicate([2, 1, 3, 4]) is None
         True
     """
+    num_freq = set()
+
+    for num in nums:
+        if num not in num_freq:
+            num_freq.add(num)
+        else:
+            return num
+    return None
